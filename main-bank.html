@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank Main Page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <header>
+        <h1 class="text-5xl text-center mt-6">
+            Have a 
+            <span class="font-bold text-pink-600">Good Day</span> 
+        </h1>
+    </header>
+    <main>
+        <section class="mt-12">
+            <div class="grid grid-cols-3 gap-4 w-9/12 mx-auto">
+                <div class="bg-orange-500 p-9 rounded-xl">
+                    <h4 class="text-2xl text-white">Deposit</h4>
+                    <h2 class="text-5xl text-white">$<span id="deposit-total">00</span></h2>
+                </div>
+                <div class="bg-red-500 p-9 rounded-xl">
+                    <h4 class="text-2xl text-white">Withdraw</h4>
+                    <h2 class="text-5xl text-white">$<span id="withdraw-total">00</span></h2>
+                </div>
+                <div class="bg-green-800 p-9 rounded-xl">
+                    <h4 class="text-2xl text-white">Balance</h4>
+                    <h2 class="text-5xl text-white">$<span id="total-balane">00</span></h2>
+                </div>
+            </div>
+        </section>
+        <section class="mt-12">
+            <div class="grid grid-cols-2 gap-4 w-9/12 mx-auto text-white">
+                <div class="bg-pink-700 p-9 rounded-xl">
+                    <h4 class="text-2xl">Deposit</h4>
+                    <input id="deposit-feild" class="w-9/12 block mb-2 px-3 text-black" type="number" name="" id="" placeholder="Type your Deposit Amount - $123547">
+                    <button id="btn-deposit" class="bg-amber-400 px-5 py-2">Deposit</button>
+                </div>
+                <div class="bg-blue-500 p-9 rounded-xl">
+                    <h4 class="text-2xl">Withdraw</h4>
+                    <input id="withdaw-feild" class="w-9/12 block mb-2 px-3 text-black" type="number" name="" id="" placeholder="Type your Withdraw Amount - $123547">
+                    <button id="btn-withdraw" class="bg-amber-400 px-5 py-2">Withdraw</button>
+                </div>
+                
+            </div>
+        </section>
+    </main>
+    <script src="/js/deposit.js"></script>
+</body>
+</html>
